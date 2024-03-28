@@ -1,0 +1,228 @@
+/**************************************************************************
+ *                                                                        *
+ *  Copyright:   (c) 2008-2024, Florin Leon                               *
+ *  E-mail:      florin.leon@academic.tuiasi.ro                           *
+ *  Website:     http://florinleon.byethost24.com/lab_ip.html             *
+ *  Description: TransportInfo application with MVC architecture.         *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
+
+
+// Metodele de mai jos trebuie plasate in clasele potrivite
+
+
+public static void MainMenu(out List<MenuOption> options, out string action)
+{
+    action = "Selectati rolul";
+    options = new List<MenuOption>
+    {
+        new MenuOption("1", "Utilizator", UserChoice.UserMenu),
+        new MenuOption("2", "Administrator", UserChoice.AdminMenu),
+        new MenuOption("3", "Iesire", UserChoice.Exit)
+    };
+}
+
+
+public static void AdminMenu(out List<MenuOption> options, out string action)
+{
+    action = "Selectati actiunea dorita";
+    // options = new List<MenuOption>
+    // ...
+}
+
+
+public static void UserMenu(out List<MenuOption> options, out string action)
+{
+    // ...
+}
+
+
+public void Start()
+{
+    Menus.UserChoice choice = Menus.UserChoice.Undefined;
+    Menus.MenuState menuState = Menus.MenuState.Main;
+
+    while (choice != Menus.UserChoice.Exit)
+    {
+        // preia comanda in functie de starea curenta a meniului
+
+        choice = GetMenuOption(menuState);
+
+        switch (choice)
+        {
+            // comenzi
+
+            case Menus.UserChoice.Route:
+                string cn1, cn2;
+                GetTwoCities(out cn1, out cn2);
+                _presenter.ComputeRoute(cn1, cn2);
+                break;
+
+            case Menus.UserChoice.RemoveCity:
+                string cityName = GetCity();
+                // de completat
+                break;
+
+            case Menus.UserChoice.AddCity:
+                City c = InputCity();
+                // de completat
+                break;
+
+            case Menus.UserChoice.List:
+                ListAll();
+                break;
+
+            case Menus.UserChoice.Exit:
+                // de completat
+                break;
+
+            // navigare meniuri
+
+            case Menus.UserChoice.AdminMenu:
+                menuState = Menus.MenuState.Administrator;
+                break;
+
+            case Menus.UserChoice.UserMenu:
+                menuState = Menus.MenuState.User;
+                break;
+
+            case Menus.UserChoice.PreviousMenu:
+                menuState = Menus.MenuState.Main;
+                break;
+        }
+    }
+}
+
+
+public void Display(string text, string color)
+{
+    ConsoleColor c = ConsoleColor.DarkGray;
+
+    switch (color)
+    {
+        case "default": c = ConsoleColor.White; break;
+        case "red": c = ConsoleColor.Red; break;
+        case "green": c = ConsoleColor.Green; break;
+        case "blue": c = ConsoleColor.Blue; break;
+        case "yellow": c = ConsoleColor.Yellow; break;
+        case "magenta": c = ConsoleColor.Magenta; break;
+    }
+
+    Console.ForegroundColor = c;
+    Console.WriteLine(text);
+}
+
+
+private Menus.UserChoice GetMenuOption(Menus.MenuState menuType)
+{
+    string action = "";
+
+    switch (menuType)
+    {
+        case Menus.MenuState.Main:
+            Menus.MainMenu(out _menuOptions, out action);
+            break;
+
+        case Menus.MenuState.Administrator:
+            Menus.AdminMenu(out _menuOptions, out action);
+            break;
+
+        case Menus.MenuState.User:
+            Menus.UserMenu(out _menuOptions, out action);
+            break;
+    }
+
+    Menus.UserChoice choice = Menus.UserChoice.Undefined;
+
+    while (choice == Menus.UserChoice.Undefined)
+    {
+        Display(action + Environment.NewLine, "yellow");
+
+        for (int i = 0; i < _menuOptions.Count; i++)
+            Display(_menuOptions[i].Number + ". " + _menuOptions[i].Text, "default");
+
+        Console.Write(Environment.NewLine + "Optiunea dumneavoastra: ");
+        string userChoiceNumber = Console.ReadLine();
+        Console.WriteLine();
+
+        for (int i = 0; i < _menuOptions.Count; i++)
+        {
+            if (userChoiceNumber == _menuOptions[i].Number)
+            {
+                choice = _menuOptions[i].Choice;
+                break;
+            }
+        }
+    }
+
+    return choice;
+}
+
+
+public void Init()
+{
+    _view.Display("Arhitectura Model-View-Presenter", "default");
+    _view.Display("Ingineria programarii, Laboratorul 6", "default");
+    _view.Display("============================================\r\n", "default");
+
+    if (!_model.DataExists())
+    {
+        _view.Display("Fisierul cu orase nu exista.\r\n", "red");
+    }
+    else
+    {
+        _model.InitializeData();
+        _view.Display($"Fisier incarcat: {_model.CityCount} orase.\r\n", "magenta");
+    }
+}
+
+
+public void Exit()
+{
+    if (_model.SaveData())
+        _view.Display("Fisierul a fost salvat.\r\n", "magenta");
+    _view.Display("La revedere.", "default");
+    Application.DoEvents();
+    Thread.Sleep(1000);
+    Environment.Exit(0);
+}
+
+
+/// <summary>
+/// Distance in km between two locations on Earth using Haversine's formula
+/// </summary>
+public static double Distance(City c1, City c2)
+{
+    // calculeaza distanta in kilometri intre doua puncte de pe suprafata Pamantului
+    // identificate prin latitudine si longitudine, folosind formula lui Haversine
+
+    double lat1 = c1.Latitude * Math.PI / 180.0;
+    double long1 = c1.Longitude * Math.PI / 180.0;
+    double lat2 = c2.Latitude * Math.PI / 180.0;
+    double long2 = c2.Longitude * Math.PI / 180.0;
+
+    double dLat = lat2 - lat1;
+    double dLong = long2 - long1;
+
+    double a = Math.Sin(dLat / 2) * Math.Sin(dLat / 2) + Math.Cos(lat1) * Math.Cos(lat2) * Math.Sin(dLong / 2) * Math.Sin(dLong / 2);
+    double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
+
+    double radius = 6371;  // raza Pamantului in km
+    return radius * c;  // distanta in km
+}
+
+
+/// <summary>
+/// Returns the cost for a given distance
+/// </summary>
+public static double Cost(double distance)
+{
+    return (5 + distance / 30.0) * 5;  // o functie de calcul al costului
+}

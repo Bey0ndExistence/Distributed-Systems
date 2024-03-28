@@ -1,0 +1,52 @@
+/**************************************************************************
+ *                                                                        *
+ *  Copyright:   (c) 2008-2024, Florin Leon                               *
+ *  E-mail:      florin.leon@academic.tuiasi.ro                           *
+ *  Website:     http://florinleon.byethost24.com/lab_ip.html             *
+ *  Description: TransportInfo application with MVC architecture.         *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
+
+
+public enum UserChoice { AdminMenu, UserMenu, PreviousMenu, Route, AddCity, RemoveCity, Exit, List, Undefined };
+
+public enum MenuState { Main, Administrator, User };
+
+
+public struct MenuOption
+{
+    // structura pentru construirea dinamica a unui meniu
+    // reprezinta o optiune intr-un meniu
+
+    public readonly string Number;
+    public readonly string Text;
+    public readonly UserChoice Choice;
+
+    public MenuOption(string number, string text, UserChoice choice)
+    {
+        Number = number;
+        Text = text;
+        Choice = choice;
+    }
+}
+
+
+public struct City
+{
+    public readonly double Latitude, Longitude;
+    public readonly string Name;  // read only, pentru ca structura sa fie imutabila
+
+    public City(string name, double latitude, double longitude)
+    {
+        Name = name;
+        Latitude = latitude;
+        Longitude = longitude;
+    }
+}

@@ -1,0 +1,9 @@
+C:\Facultate\IP\lab6\View\bin\Debug\View.dll
+C:\Facultate\IP\lab6\View\bin\Debug\View.pdb
+C:\Facultate\IP\lab6\View\obj\Debug\View.csproj.AssemblyReference.cache
+C:\Facultate\IP\lab6\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+C:\Facultate\IP\lab6\View\obj\Debug\View.dll
+C:\Facultate\IP\lab6\View\obj\Debug\View.pdb
+C:\Facultate\IP\lab6\View\bin\Debug\Commons.dll
+C:\Facultate\IP\lab6\View\bin\Debug\Commons.pdb
+C:\Facultate\IP\lab6\View\obj\Debug\View.csproj.CopyComplete

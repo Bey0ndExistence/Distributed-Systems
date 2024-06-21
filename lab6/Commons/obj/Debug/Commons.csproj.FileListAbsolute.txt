@@ -1,6 +1,0 @@
-C:\Facultate\IP\lab6\Commons\bin\Debug\Commons.dll
-C:\Facultate\IP\lab6\Commons\bin\Debug\Commons.pdb
-C:\Facultate\IP\lab6\Commons\obj\Debug\Commons.csproj.AssemblyReference.cache
-C:\Facultate\IP\lab6\Commons\obj\Debug\Commons.csproj.CoreCompileInputs.cache
-C:\Facultate\IP\lab6\Commons\obj\Debug\Commons.dll
-C:\Facultate\IP\lab6\Commons\obj\Debug\Commons.pdb

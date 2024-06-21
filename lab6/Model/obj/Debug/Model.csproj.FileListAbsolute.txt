@@ -1,9 +1,0 @@
-C:\Facultate\IP\lab6\Model\bin\Debug\Model.dll
-C:\Facultate\IP\lab6\Model\bin\Debug\Model.pdb
-C:\Facultate\IP\lab6\Model\obj\Debug\Model.csproj.AssemblyReference.cache
-C:\Facultate\IP\lab6\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
-C:\Facultate\IP\lab6\Model\obj\Debug\Model.dll
-C:\Facultate\IP\lab6\Model\obj\Debug\Model.pdb
-C:\Facultate\IP\lab6\Model\bin\Debug\Commons.dll
-C:\Facultate\IP\lab6\Model\bin\Debug\Commons.pdb
-C:\Facultate\IP\lab6\Model\obj\Debug\Model.csproj.CopyComplete

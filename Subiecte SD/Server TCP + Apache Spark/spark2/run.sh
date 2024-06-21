@@ -1,0 +1,1 @@
+/opt/spark/bin/spark-submit --class "org.example.HelloKt" --master local /home/student/IdeaProjects/spark2/target/kotlin-spark-example-1.0-SNAPSHOT.jar

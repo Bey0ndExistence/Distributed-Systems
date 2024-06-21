@@ -1,0 +1,19 @@
+<StudentList>
+    <student_list>
+        <student_list>
+            <nume>Moisii</nume>
+            <prenume>Marin</prenume>
+            <varsta>3</varsta>
+        </student_list>
+        <student_list>
+            <nume>Enachi</nume>
+            <prenume>Vasile</prenume>
+            <varsta>4</varsta>
+        </student_list>
+        <student_list>
+            <nume>Atomei</nume>
+            <prenume>Georgiana</prenume>
+            <varsta>5</varsta>
+        </student_list>
+    </student_list>
+</StudentList>

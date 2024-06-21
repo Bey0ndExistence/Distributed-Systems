@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        table {
+            margin-top: 10px;
+        }
+
+        td {
+            padding: 10px;
+        }
+        button {
+            margin-left: 50px;
+        }
+
+        body{
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formular</h1>
+    <form action="{{ url_for('update_expense',member_id = member.id)}}" method="post">
+        <div class="form-group">
+            <label for="name">Nume:</label>
+            <input type="text" class="form-control" name="name" value="{{member.name}}">
+
+            <label for="expense">Cheltuiala:</label>
+            <input type="number" class="form-control" name="expense" value="{{member.expense}}">
+            <br/>
+            <button type="submit" class="btn btn-primary btn-lg active" > SAVE</button>
+            <a href='{{url_for('show_expenditure')}}' class="btn btn-primary btn-lg active" role="button"> Cancel</a>
+        </div>
+    </form>
+</body>
+</html>

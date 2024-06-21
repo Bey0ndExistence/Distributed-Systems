@@ -1,0 +1,31 @@
+# DE MENTIONAT FOARTE IMPORTANT
+# PE UNELE INSTALL-URI DE DOCKER
+# docker compose SAU docker-compose
+# DEPINDE CUM E INSTALAT DOCKER
+
+
+# sa pornesti un compose (trebuie sa fii in acelasi directory cu docker-compose.yaml)
+docker compose up
+
+# sa pornesti un compose IN BACKGROUND
+docker compose up -d
+
+# !!!!!!!! sa pornesti un compose IN BACKGROUND SI II DAI BUILD !!!!!! PE ASTA O VEI FOLOSI DE CELE MAI MULTE ORI !!!!!!
+docker compose up -d --build
+ 
+# !!!!!!!! opresti toate dockerele din compose !!!!!! PE ASTA O VEI FOLOSI DE CELE MAI MULTE ORI !!!!!!
+docker compose down
+
+# opresti microserviciile din compose si stergi orfanii (dumitru, panciuc sau servicii care nu mai apar in compose)
+# de exemplu: daca dai spawn la 6 microservicii folosind replicate, cu comanda asta ii stergi pe toti
+docker compose down --remove-orphans
+
+# dai restart la toate microserviciile
+docker compose restart
+
+# dai restart la un microserviciu din compose
+docker compose retart nume_serviciu_din_compose
+
+# vezi microserviciile pornite
+docker ps
+docker stats

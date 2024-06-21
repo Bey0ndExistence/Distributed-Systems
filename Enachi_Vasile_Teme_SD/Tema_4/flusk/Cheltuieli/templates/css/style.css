@@ -1,0 +1,20 @@
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    margin-top: 10px;
+}
+
+td {
+    padding: 10px;
+}
+button {
+    margin-left: 50px;
+}
+
+body{
+    max-width: 500px;
+    margin: auto;
+}

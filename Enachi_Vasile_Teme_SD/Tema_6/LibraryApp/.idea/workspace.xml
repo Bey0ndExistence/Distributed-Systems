@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aaeeab89-547c-4d96-90d9-fe18d79942f5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1XdGO16bIDTKiOUFeGXdY0FkrhX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/media/sf_Facultate/Anul 3 CTI/SEM 2/Materiale_random/SD/Enachi_Vasile_Teme_SD/Tema_6/LibraryApp"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/com/sd/laborator" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LibraryApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="LibraryApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sd.laborator.LibraryApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aaeeab89-547c-4d96-90d9-fe18d79942f5" name="Default Changelist" comment="" />
+      <created>1581368521262</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581368521262</updated>
+      <workItem from="1586037469973" duration="5307000" />
+      <workItem from="1586093454806" duration="13802000" />
+      <workItem from="1586119575198" duration="16000" />
+      <workItem from="1586158142072" duration="1909000" />
+      <workItem from="1586183832291" duration="3655000" />
+      <workItem from="1586188920979" duration="15891000" />
+      <workItem from="1586252124939" duration="5722000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2659" y="301" width="434" height="566" key="#com.intellij.ide.util.MemberChooser" timestamp="1581397102598">
+      <screen x="1920" y="0" width="1920" height="1200" />
+    </state>
+    <state x="2659" y="301" width="434" height="566" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160/1920.0.1920.1200@1920.0.1920.1200" timestamp="1581397102598" />
+    <state x="297" y="0" width="757" height="728" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583048966790">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="297" y="0" width="757" height="728" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1583048966790" />
+    <state x="693" y="332" width="526" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584899704040">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="693" y="332" width="526" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1584899704040" />
+    <state x="554" y="334" width="424" height="484" key="FileChooserDialogImpl" timestamp="1586209248908">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="0" y="0" width="1366" height="728" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582640732744" />
+    <state x="743" y="338" width="426" height="486" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1584895749869" />
+    <state x="554" y="334" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1586209248908" />
+    <state width="1503" height="235" key="GridCell.Tab.0.bottom" timestamp="1586261521215">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1324" height="173" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583049771291" />
+    <state width="1878" height="504" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1584907041229" />
+    <state width="1878" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1200@1920.0.1920.1200" timestamp="1584929542410" />
+    <state width="1503" height="235" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1586261521215" />
+    <state width="1503" height="235" key="GridCell.Tab.0.center" timestamp="1586261521211">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1324" height="173" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583049771291" />
+    <state width="1878" height="504" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1584907041229" />
+    <state width="1878" height="285" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1200@1920.0.1920.1200" timestamp="1584929542410" />
+    <state width="1503" height="235" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1586261521211" />
+    <state width="1503" height="235" key="GridCell.Tab.0.left" timestamp="1586261521211">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1324" height="173" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583049771291" />
+    <state width="1878" height="504" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1584907041229" />
+    <state width="1878" height="285" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1200@1920.0.1920.1200" timestamp="1584929542410" />
+    <state width="1503" height="235" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1586261521211" />
+    <state width="1503" height="235" key="GridCell.Tab.0.right" timestamp="1586261521213">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1324" height="173" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583049771291" />
+    <state width="1878" height="504" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1584907041229" />
+    <state width="1878" height="285" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1200@1920.0.1920.1200" timestamp="1584929542410" />
+    <state width="1503" height="235" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1586261521213" />
+    <state width="1503" height="235" key="GridCell.Tab.1.bottom" timestamp="1586261521216">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1503" height="235" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1586261521216" />
+    <state width="1503" height="235" key="GridCell.Tab.1.center" timestamp="1586261521215">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1503" height="235" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1586261521215" />
+    <state width="1503" height="235" key="GridCell.Tab.1.left" timestamp="1586261521215">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1503" height="235" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1586261521215" />
+    <state width="1503" height="235" key="GridCell.Tab.1.right" timestamp="1586261521216">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1503" height="235" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1586261521216" />
+    <state width="937" height="344" key="GridCell.Tab.2.bottom" timestamp="1586255967340">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="937" height="344" key="GridCell.Tab.2.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1586255967340" />
+    <state width="937" height="344" key="GridCell.Tab.2.center" timestamp="1586255967339">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="937" height="344" key="GridCell.Tab.2.center/0.27.1920.1053@0.27.1920.1053" timestamp="1586255967339" />
+    <state width="937" height="344" key="GridCell.Tab.2.left" timestamp="1586255967338">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="937" height="344" key="GridCell.Tab.2.left/0.27.1920.1053@0.27.1920.1053" timestamp="1586255967338" />
+    <state width="937" height="344" key="GridCell.Tab.2.right" timestamp="1586255967339">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="937" height="344" key="GridCell.Tab.2.right/0.27.1920.1053@0.27.1920.1053" timestamp="1586255967339" />
+    <state x="625" y="400" key="com.intellij.ide.util.TipDialog" timestamp="1586189437788">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="626" y="410" key="com.intellij.ide.util.TipDialog/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1582861140868" />
+    <state x="2546" y="424" key="com.intellij.ide.util.TipDialog/0.0.1920.1160/1920.0.1920.1200@1920.0.1920.1200" timestamp="1583467447652" />
+    <state x="625" y="400" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1586189437788" />
+    <state x="704" y="227" width="503" height="713" key="refactoring.ChangeSignatureDialog" timestamp="1581453196178">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="704" y="227" width="503" height="713" key="refactoring.ChangeSignatureDialog/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1581453196178" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/com/sd/laborator/microservices/LibraryPrinterMicroservice.kt</url>
+          <line>148</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/com/sd/laborator/microservices/LibraryPrinterMicroservice.kt</url>
+          <line>139</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

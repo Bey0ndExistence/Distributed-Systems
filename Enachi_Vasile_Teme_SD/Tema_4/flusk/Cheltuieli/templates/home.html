@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        table {
+            margin-top: 10px;
+        }
+
+        td {
+            padding: 10px;
+        }
+        button {
+            margin-left: 75px;
+        }
+
+        body{
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Family Expenditure</h1>
+    <a href="{{url_for('add_expense')}}">
+        <button>Add Member</button>
+    </a>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nume</th>
+            <th>Cheltuiala</th>
+            <th>Actions</th>
+        </tr>
+        {% for member in members %}
+        <tr>
+            <td>{{member.id}}</td>
+            <td>{{member.name}}</td>
+            <td>{{member.expense}}</td>
+            <td>
+                <a href="{{url_for('update_expense', member_id = member.id )}}">
+                    Edit
+                </a>
+                <a href="{{url_for('delete_expense', member_id = member.id )}}" style="margin-left: 10px;">
+                    Delete
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

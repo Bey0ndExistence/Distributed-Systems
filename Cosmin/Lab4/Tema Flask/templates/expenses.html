@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Expenses</title>
+</head>
+<body>
+    <form action="/addpage/{{ userid }}" method="GET">
+        <button type="submit">Add Expense</button>
+    </form>
+    {% for row in user %}
+    <span>{{ row.firstname }}</span>
+    <span>{{ row.lastname }}</span><br/>
+    {% endfor %}
+     <table>
+        <thead>
+            <tr>
+                <th>Expense</th>
+                <th>Value</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+                {% for expense in expenses %}
+                <tr>
+                    <td>{{ expense['expense_name'] }}</td>
+                    <td>{{ expense['value'] }}</td>
+
+                    <td>
+                        <form action="/editpage/{{ userid }}/{{ expense['expense_name'] }}/{{ expense['value'] }}" method="GET">
+                            <button type="submit">
+                                Edit
+                            </button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/delete/{{ userid }}/{{ expense['expense_name'] }}" method="GET">
+                            <button type="submit">
+                                Delete
+                            </button>
+                        </form></td>
+                </tr>
+                {% endfor %}
+
+        </tbody>
+    </table>
+</body>
+</html>

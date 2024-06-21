@@ -1,0 +1,91 @@
+services:
+  heartbeat:
+    build:
+      context: HeartbeatMicroservice
+    networks:
+      - ms-net
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./:/app/files
+    environment:
+      - PROJECT_NAME=subiectgay # AICI PUI NUMELE PROIECTULUI / FOLDERULUI IN CARE LUCREZI
+
+  message_manager:
+    build:
+      context: MessageManagerMicroservice
+    depends_on:
+      - heartbeat
+    networks:
+      - ms-net
+    environment:
+      - HEARTBEAT_HOST=heartbeat
+      - CONTAINER_NAME=message_manager
+
+  teacher:
+    build:
+      context: TeacherMicroservice
+    depends_on:
+      - message_manager
+      - heartbeat
+    ports:
+      - 1600:1600
+    networks:
+      - ms-net
+    environment:
+      - MESSAGE_MANAGER_HOST=message_manager
+      - HEARTBEAT_HOST=heartbeat
+      - CONTAINER_NAME=teacher
+
+  student1:
+    build:
+      context: StudentMicroservice
+    volumes:
+      - ./question_database1.txt:/app/questions_database.txt
+    depends_on:
+      message_manager:
+        condition: service_started
+      teacher:
+        condition: service_started
+      heartbeat:
+        condition: service_started
+    networks:
+      - ms-net
+    environment:
+      - HEARTBEAT_HOST=heartbeat
+      - MESSAGE_MANAGER_HOST=message_manager
+      - CONTAINER_NAME=student1
+
+  student2:
+    build:
+      context: StudentMicroservice
+    volumes:
+      - ./question_database2.txt:/app/questions_database.txt
+    depends_on:
+      - message_manager
+      - teacher
+      - heartbeat
+    networks:
+      - ms-net
+    environment:
+      - HEARTBEAT_HOST=heartbeat
+      - MESSAGE_MANAGER_HOST=message_manager
+      - CONTAINER_NAME=student2
+
+  student3:
+    build:
+      context: StudentMicroservice
+    volumes:
+      - ./question_database3.txt:/app/questions_database.txt
+    depends_on:
+      - message_manager
+      - teacher
+      - heartbeat
+    networks:
+      - ms-net
+    environment:
+      - HEARTBEAT_HOST=heartbeat
+      - MESSAGE_MANAGER_HOST=message_manager
+      - CONTAINER_NAME=student3
+
+networks:
+  ms-net:

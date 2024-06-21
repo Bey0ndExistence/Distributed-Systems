@@ -1,0 +1,25 @@
+Programming in LUA
+Roberto Ierusalimschy
+Teora
+Preface. When Waldemar, Luiz, and I started the development of Lua, back in 1993, we could hardly imagine that it would spread as it did. ...
+
+Steaua Sudului
+Jules Verne
+Corint
+Nemaipomeniti sunt francezii astia! - Vorbiti, domnule, va ascult! ....
+
+O calatorie spre centrul pamantului
+Jules Verne
+Polirom
+Cuvant Inainte. Imaginatia copiilor - zicea un mare poet romantic spaniol - este asemenea unui cal nazdravan, iar curiozitatea lor e pintenul ce-l fugareste prin lumea celor mai indraznete proiecte.
+
+Insula Misterioasa
+Jules Verne
+Teora
+Partea intai. Naufragiatii vazduhului. Capitolul 1. Uraganul din 1865. ...
+
+Casa cu aburi
+Jules Verne
+Albatros
+Capitolul I. S-a pus un premiu pe capul unui om. Se ofera premiu de 2000 de lire ...
+

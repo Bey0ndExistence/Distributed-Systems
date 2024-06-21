@@ -1,0 +1,60 @@
+services:
+  message_manager:
+    build:
+      context: MessageManagerMicroservice
+    networks:
+      - ms-net
+
+  teacher:
+    build:
+      context: TeacherMicroservice
+    depends_on:
+      - message_manager
+    ports:
+      - 1600:1600
+    networks:
+      - ms-net
+    environment:
+      - MESSAGE_MANAGER_HOST=message_manager
+
+  student1:
+    build:
+      context: StudentMicroservice
+    volumes:
+      - ./question_database1.txt:/app/questions_database.txt
+    depends_on:
+      - message_manager
+      - teacher
+    networks:
+      - ms-net
+    environment:
+      - MESSAGE_MANAGER_HOST=message_manager
+
+  student2:
+    build:
+      context: StudentMicroservice
+    volumes:
+      - ./question_database2.txt:/app/questions_database.txt
+    depends_on:
+      - message_manager
+      - teacher
+    networks:
+      - ms-net
+    environment:
+      - MESSAGE_MANAGER_HOST=message_manager
+
+  student3:
+    build:
+      context: StudentMicroservice
+    volumes:
+      - ./question_database3.txt:/app/questions_database.txt
+    depends_on:
+      - message_manager
+      - teacher
+    networks:
+      - ms-net
+    environment:
+      - MESSAGE_MANAGER_HOST=message_manager
+
+networks:
+  ms-net:

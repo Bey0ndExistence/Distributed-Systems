@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77d7f7b4-3f7e-4f75-95b9-80104f0af840" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xx3g4tuXwusqFDOZWIVyFmXsNv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Lab_5/Test-Laborator/exemplu_1/StackApp" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn org.codehaus.cargo:cargo-maven2-plugin:run" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.Start server &amp; deploy app">
+    <configuration name="Redeploy" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="org.codehaus.cargo:cargo-maven2-plugin:redeploy" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Start server &amp; deploy app" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="org.codehaus.cargo:cargo-maven2-plugin:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Stop server" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="org.codehaus.cargo:cargo-maven2-plugin:stop" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.Stop server" />
+      <item itemvalue="Maven.Start server &amp; deploy app" />
+      <item itemvalue="Maven.Redeploy" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77d7f7b4-3f7e-4f75-95b9-80104f0af840" name="Default Changelist" comment="" />
+      <created>1581974026060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581974026060</updated>
+      <workItem from="1581974029566" duration="709000" />
+      <workItem from="1581974807863" duration="3077000" />
+      <workItem from="1582363924993" duration="797000" />
+      <workItem from="1582364745485" duration="1110000" />
+      <workItem from="1582383696334" duration="397000" />
+      <workItem from="1582384412810" duration="5513000" />
+      <workItem from="1582452099786" duration="4635000" />
+      <workItem from="1582466218470" duration="80000" />
+      <workItem from="1582474266884" duration="13851000" />
+      <workItem from="1582538816921" duration="461000" />
+      <workItem from="1582540363411" duration="2002000" />
+      <workItem from="1583745713364" duration="146000" />
+      <workItem from="1585075250873" duration="325000" />
+      <workItem from="1585075860171" duration="77000" />
+      <workItem from="1585075953647" duration="584000" />
+      <workItem from="1585076553685" duration="98000" />
+      <workItem from="1585076664462" duration="229000" />
+      <workItem from="1585481623854" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="214" width="800" height="677" key="#Project_Structure" timestamp="1585075917886">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="214" width="800" height="677" key="#Project_Structure/0.27.1920.1053@0.27.1920.1053" timestamp="1585075917886" />
+    <state x="406" y="200" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585076790472">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="406" y="200" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1585076790472" />
+    <state x="457" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582388710519" />
+    <state x="804" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1582475215987">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="804" y="219" key="#com.intellij.ide.util.MemberChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1582475215987" />
+    <state x="680" y="267" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582364718655">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="680" y="267" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582364718655" />
+    <state x="740" y="299" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585481643646">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="740" y="299" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1585481643646" />
+    <state x="780" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1583745857510" />
+    <state width="1354" height="260" key="GridCell.Tab.0.bottom" timestamp="1585076893710">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1354" height="260" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1585076893710" />
+    <state width="1275" height="295" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1582542716140" />
+    <state width="1354" height="260" key="GridCell.Tab.0.center" timestamp="1585076893709">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1354" height="260" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1585076893709" />
+    <state width="1275" height="295" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1582542716136" />
+    <state width="1354" height="260" key="GridCell.Tab.0.left" timestamp="1585076893708">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1354" height="260" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1585076893708" />
+    <state width="1275" height="295" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1582542716134" />
+    <state width="1354" height="260" key="GridCell.Tab.0.right" timestamp="1585076893709">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1354" height="260" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1585076893709" />
+    <state width="1275" height="295" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1582542716138" />
+    <state x="436" y="177" width="1024" height="845" key="SettingsEditor" timestamp="1585076749038">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="436" y="177" width="1024" height="845" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1585076749038" />
+    <state x="486" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1582456027488" />
+    <state x="610" y="383" key="com.intellij.ide.util.TipDialog" timestamp="1585481624408">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="610" y="383" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1585481624408" />
+    <state x="654" y="381" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582452245286" />
+    <state x="305" y="77" key="new project wizard" timestamp="1582540818697">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="305" y="77" key="new project wizard/65.24.1855.1056@65.24.1855.1056" timestamp="1582540818697" />
+    <state x="656" y="246" width="672" height="677" key="run.anything.popup" timestamp="1581975528066">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="656" y="246" width="672" height="677" key="run.anything.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1581975528066" />
+    <state x="622" y="271" width="672" height="678" key="search.everywhere.popup" timestamp="1585076623944">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="622" y="271" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1585076623944" />
+  </component>
+</project>

@@ -1,0 +1,15 @@
+Mar 01, 2020 7:54:49 PM Utilities.MyLogger log
+INFO: Denumire SD
+Nr Credite: 4
+ID : 401
+Option : add
+Mar 01, 2020 7:55:05 PM Utilities.MyLogger log
+INFO: Denumire SD
+Nr Credite: 4
+ID : 401
+Option : modify
+Mar 01, 2020 7:55:14 PM Utilities.MyLogger log
+INFO: Denumire 
+Nr Credite: 
+ID : 551
+Option : delete

@@ -1,0 +1,32 @@
+# docker-compose.yaml
+services:
+  auctioneer:
+    build:
+      context: .
+      dockerfile: AuctioneerMicroservice/Dockerfile
+    depends_on:
+      - message_processor
+    network_mode: host
+
+  bidder:
+    build:
+      context: .
+      dockerfile: BidderMicroservice/Dockerfile
+    deploy:
+      mode: replicated
+      replicas: 5
+    depends_on:
+      - auctioneer
+    network_mode: host
+
+  bidding_processor:
+    build:
+      context: .
+      dockerfile: BiddingProcessorMicroservice/Dockerfile
+    network_mode: host
+
+  message_processor:
+    build:
+      context: .
+      dockerfile: MessageProcessorMicroservice/Dockerfile
+    network_mode: host

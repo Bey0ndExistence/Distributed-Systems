@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>KOTLIN AJAX</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/basic_methods.js"></script>
+    <script src="/js/getall_request.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <style>
+        #postResultDiv {
+            color: green;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        table {
+            margin-top: 10px;
+        }
+
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>KOTLIN POST/GET AJAX</h1>
+    <div class="row">
+        <div id="postdiv" class="col-sm-4">
+            <form id="customerForm">
+                <label>Operatiunea dorita</label>
+                <select style="background-color: rgb(170, 247, 236)" class="form-control" name="operation" id="operation">
+                    <option value="post">Post</option>
+                    <option value="update">Update</option>
+                    <option value="delete">Delete</option>
+                    <option value="get">Get</option>
+                </select>
+                <div class="form-group">
+                    <label>ID</label>
+                    <input type="number" id="id" placeholder="id" class="form-control"/>
+                </div>
+
+                <div class="form-group">
+                    <label>FirstName</label>
+                    <input type="text" id="firstname" placeholder="firstname" class="form-control"/>
+                </div>
+
+                <div class="form-group">
+                    <label>LastName</label>
+                    <input type="text" id="lastname" placeholder="lastname" class="form-control"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Telephone</label>
+                    <input type="text" id="telephone" placeholder="telephone" class="form-control"/>
+                </div>
+
+                <button type="submit" id="postBtn" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Post Return -->
+    <div class="row">
+        <div id="postResultDiv" class="col-sm-7">
+        </div>
+    </div>
+
+    <!-- Get All Customers -->
+    <div class="row">
+        <div id="getdiv" class="col-sm-4">
+            <button type="button" id="getBtn" class="btn btn-info">Get All Persons</button>
+        </div>
+    </div>
+    <div class="row">
+        <div id="getResultDiv" class="col-sm-5">
+
+            <table class="list-group">
+
+            </table>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

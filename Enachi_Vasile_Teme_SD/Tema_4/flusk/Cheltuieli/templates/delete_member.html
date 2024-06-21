@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        table {
+            margin-top: 10px;
+        }
+
+        td {
+            padding: 10px;
+        }
+        button {
+            margin-left: 30%;
+        }
+
+        body{
+            max-width: 700px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h3> Esti sigur ca vrei sa stergi cheltuielile lui {{member.name}}? </h3>
+    <form action="#" method='post'>
+        <button type="submit" class="btn btn-primary btn-lg active"> Delete</button>
+         <a href='{{url_for('show_expenditure')}}' class="btn btn-primary btn-lg active" role="button"> Cancel</a>
+
+    </form>
+</body>
+</html>

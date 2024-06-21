@@ -1,0 +1,92 @@
+{
+  "rabbit_version": "3.8.9",
+  "rabbitmq_version": "3.8.9",
+  "product_name": "RabbitMQ",
+  "product_version": "3.8.9",
+  "users": [
+    {
+      "name": "student",
+      "password_hash": "UXHDV3B5A0zuY8TWlE5OxBMv1khndkzQ9u2o4pQOuX3cvRkF",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+    },
+    {
+      "name": "guest",
+      "password_hash": "KBXt8EeAo9i3Cv4TVQy4pqdYJ8MiBJvZ8hZbMvpGfWJBBPkH",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+    }
+  ],
+  "vhosts": [{ "name": "/" }],
+  "permissions": [
+    {
+      "user": "guest",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "student",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ],
+  "topic_permissions": [],
+  "parameters": [],
+  "global_parameters": [
+    { "name": "cluster_name", "value": "rabbit@debian" },
+    {
+      "name": "internal_cluster_id",
+      "value": "rabbitmq-cluster-id-_gyCEgrGUmFKb1KJ8TCNqg"
+    }
+  ],
+  "policies": [],
+  "queues": [
+    {
+      "name": "stackapp.queue1",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": { "x-queue-type": "classic" }
+    },
+    {
+      "name": "stackapp.queue",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": { "x-queue-type": "classic" }
+    }
+  ],
+  "exchanges": [
+    {
+      "name": "stackapp.direct",
+      "vhost": "/",
+      "type": "direct",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    }
+  ],
+  "bindings": [
+    {
+      "source": "stackapp.direct",
+      "vhost": "/",
+      "destination": "stackapp.queue",
+      "destination_type": "queue",
+      "routing_key": "stackapp.routingkey",
+      "arguments": {}
+    },
+    {
+      "source": "stackapp.direct",
+      "vhost": "/",
+      "destination": "stackapp.queue1",
+      "destination_type": "queue",
+      "routing_key": "stackapp.routingkey1",
+      "arguments": {}
+    }
+  ]
+}

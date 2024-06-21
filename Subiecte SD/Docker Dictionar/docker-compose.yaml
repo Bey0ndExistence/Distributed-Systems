@@ -1,0 +1,73 @@
+services:
+  message_manager:
+    build:
+      context: MessageManagerMicroservice
+    ports:
+      - 1500:1500
+    networks:
+      - ms-net
+
+  student1:
+    depends_on:
+      - message_manager
+    environment:
+      - MESSAGE_MANAGER_HOST=message_manager
+    build:
+      context: StudentMicroservice
+
+    networks:
+      - ms-net
+    volumes:
+      - ./question_database1.txt:/usr/src/student/questions_database.txt
+  student2:
+    depends_on:
+      - message_manager
+    environment:
+      - MESSAGE_MANAGER_HOST=message_manager
+    build:
+      context: StudentMicroservice
+    networks:
+      - ms-net
+    volumes:
+      - ./question_database2.txt:/usr/src/student/questions_database.txt
+  student3:
+    depends_on:
+      - message_manager
+    environment:
+      - MESSAGE_MANAGER_HOST=message_manager
+    build:
+      context: StudentMicroservice
+    networks:
+      - ms-net
+    volumes:
+      - ./question_database3.txt:/usr/src/student/questions_database.txt
+
+  teacher:
+    depends_on:
+      - message_manager
+    environment:
+      - MESSAGE_MANAGER_HOST=message_manager
+    build:
+      context: TeacherMicroservice
+    ports:
+      - 1600:1600
+    networks:
+      - ms-net
+
+  dictionary:
+    depends_on:
+      - message_manager
+      - student1
+      - student2
+      - student3
+      - teacher
+    environment:
+      - MESSAGE_MANAGER_HOST=message_manager
+    build:
+      context: DictionaryMicroservice
+    networks:
+      - ms-net
+
+networks:
+  ms-net:
+

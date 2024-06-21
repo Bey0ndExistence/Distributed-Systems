@@ -1,0 +1,58 @@
+services:
+# daca vrei sa rulezi rabbitmq din docker
+# nu uita sa pui si fisierele definitions.json si rabbitmq.config
+#  rabbitmq:
+#    image: rabbitmq:3.6.5-management
+#    volumes:
+#      - ./definitions.json:/opt/definitions.json
+#      - ./rabbitmq.config:/etc/rabbitmq/rabbitmq.config
+
+  prepare_auction:
+    network_mode: host
+    build:
+      context: PrepareAuction
+
+  auctioneer:
+    network_mode: host
+    build:
+      context: Auctioneer
+    depends_on:
+      - prepare_auction
+      - message_processor
+      - bidder_processor
+      - bidder
+
+  message_processor:
+    network_mode: host
+    build:
+      context: MessageProcessor
+    depends_on:
+      - prepare_auction
+      - stats
+  stats:
+    network_mode: host
+    build:
+      context: Stats
+    volumes:
+      - ./Stats/logs.txt:/app/logs.txt
+
+
+  bidder:
+    network_mode: host
+    build:
+      context: Bidder
+    depends_on:
+      - prepare_auction
+      - message_processor
+      - bidder_processor
+
+    deploy:
+      replicas: 10
+      mode: replicated
+
+  bidder_processor:
+    network_mode: host
+    build:
+      context: BiddingProcessor
+    depends_on:
+      - prepare_auction
